@@ -4,10 +4,9 @@
     {
         static void Main(string[] args)
         {
-            var car = new Car();
-            car.Make = "BMW";
-            car.Model = "335i";
-            car.Year = 2015;   
+            Car car = new Car("BMW", "335i", 2015);
+            car.DisplayProperties(car.Make, car.Model, car.Year);
+               
         }
     }
 }
